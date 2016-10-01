@@ -7,10 +7,10 @@ project(${PROJECT_NAME})
 # List COMMAND
 set(CMAKE_CXX_FLAGS "-g -Wall -std=c++0x")
 
-set(MATLABROOT /Applications/MATLAB_R2016a.app/)
+set(MATLAB_ROOT /Applications/MATLAB_R2016a.app/)
 
-include_directories(/Applications/MATLAB_R2016a.app/extern/include/)
-LINK_DIRECTORIES(/Applications/MATLAB_R2016a.app/bin/maci64/)
+include_directories(${MATLAB_ROOT}extern/include/)
+LINK_DIRECTORIES(${MATLAB_ROOT}bin/maci64/)
 
 set(SRCS
     main.cpp

@@ -63,18 +63,9 @@ int main() {
 	/*
 	 * Free memory, close MATLAB engine and exit.
 	 */
-
 	std::cout  << "Done!" << std::endl;
 	mxDestroyArray(result);
 	engClose(ep);
 
 	return 0;
 }
-
-
-//export PATH=$PATH:/Applications/MATLAB_R2016a.app/bin
-
-
-
-
-
