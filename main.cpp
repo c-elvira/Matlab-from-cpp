@@ -33,7 +33,8 @@ int main() {
 	 * Call engOpen with a NULL string. This starts a MATLAB process
      * on the current host using the command "matlab".
 	 */
-	if (!(ep = engOpen(""))) {
+	// One may add also -nojvm, but in that case no graph will be drawn
+	if (!(ep = engOpen("matlab -nosplash -nodesktop"))) {
 		fprintf(stderr, "\nCan't start MATLAB engine\n");
 		return 1;
 	}
